@@ -15,6 +15,7 @@ class MinStack:
         
 
     def pop(self) -> None:
+        self.min = self.min_stack[-2]
         del self.stack[-1]
         del self.min_stack[-1]
         
