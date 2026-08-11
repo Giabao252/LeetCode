@@ -15,10 +15,10 @@ class MinStack:
         
 
     def pop(self) -> None:
-        self.min = self.min_stack.top()
         del self.stack[-1]
         del self.min_stack[-1]
-        
+        if self.min_stack:
+            self.min = self.min_stack[-1]
 
     def top(self) -> int:
         return self.stack[-1]
