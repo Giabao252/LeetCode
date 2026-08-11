@@ -1,8 +1,9 @@
+#two pointers: sort the array -> let i be the anchor starting at 0, L and R moves depending on the sum (>0 -> shift R for smaller value | <0 -> shift L for larger value)
+
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         res = []
         nums.sort()
-
 
         for i, val in enumerate(nums):
             if i > 0 and val == nums[i-1]:
