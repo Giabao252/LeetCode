@@ -3,10 +3,10 @@ class Solution:
         numSet = set(nums)
         longest = 0
         
-        for i in nums:
+        for i in numSet:
             if (i - 1) not in numSet: 
-                length = 0
-                while (i + length) in numSet:
+                length = i + 1
+                while length in numSet:
                     length += 1
-                longest = max(length, longest)        
+                longest = max(longest, length - i)        
         return longest
