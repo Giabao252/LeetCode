@@ -4,7 +4,7 @@ class Solution:
 
         for i in range(len(strs[0])):
             for s in strs:
-                if i == len(s) or s[i] != strs[0][i]:
+                if i == len(s) or s[i] != strs[0][i]: #check if index is not out of bounds and the prefix check
                     return res
             res += strs[0][i]    
         
