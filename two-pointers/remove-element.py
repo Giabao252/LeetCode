@@ -1,5 +1,6 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
+        #two pointer -> push the val elements to the back and update k
         k = 0
         i = 0
         j = len(nums) - 1
