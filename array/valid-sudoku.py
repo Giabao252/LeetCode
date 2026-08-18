@@ -13,6 +13,7 @@ class Solution:
                     return False
                 rows[row].add(board[row][col])
                 cols[col].add(board[row][col])
+                boxes[(row // 3, col // 3)].add(board[row][col])
 
         return True
 
