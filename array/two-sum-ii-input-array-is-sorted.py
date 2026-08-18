@@ -3,7 +3,7 @@ class Solution:
         low = 0
         high = len(numbers) - 1
 
-        while low < high:
+        while low <= high:
             mid = low + (high - low) // 2
 
             if numbers[low] + numbers[high] == target:
