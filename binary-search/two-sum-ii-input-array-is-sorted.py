@@ -11,6 +11,9 @@ class Solution:
             
             if numbers[low] + numbers[mid] == target:
                 return [low + 1, mid + 1]
+
+            if numbers[high] + numberss[mid] == target:
+                return [mid + 1, high + 1]
             
             elif numbers[low] + numbers[mid] < target: 
                 low = mid + 1
