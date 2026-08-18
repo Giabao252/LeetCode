@@ -12,7 +12,7 @@ class Solution:
             if numbers[low] + numbers[mid] == target:
                 return [low + 1, mid + 1]
 
-            if numbers[high] + numberss[mid] == target:
+            if numbers[high] + numbers[mid] == target:
                 return [mid + 1, high + 1]
             
             elif numbers[low] + numbers[mid] < target: 
