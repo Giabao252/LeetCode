@@ -17,7 +17,7 @@ class Solution:
             
             elif numbers[low] + numbers[mid] < target: 
                 low = mid + 1
-            else:
+            elif numbers [mid] + numbers[high] > target:
                 high = mid -1
         
         return -1
