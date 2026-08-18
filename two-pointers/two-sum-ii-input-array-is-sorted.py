@@ -4,7 +4,7 @@ class Solution:
         high = len(numbers) - 1
 
         while low < high:
-            mid = (low + high) // 2
+            mid = low + (high - low) // 2
 
             if numbers[low] + numbers[high] == target:
                 return [low + 1, high + 1]
