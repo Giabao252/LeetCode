@@ -4,7 +4,8 @@ class Solution:
         rows = collections.defaultdict(set)
         cols = collections.defaultdict(set)
         boxes = collections.defaultdict(set) # key = (r//3, c//3)
-
+        #board = 3x3 board of 3x3 boxes -> floor division of row/col indices by 3 would get the indices of the boxes
+        
         for row in range(9):
             for col in range(9):
                 if board[row][col] == ".":
