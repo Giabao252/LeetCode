@@ -9,9 +9,9 @@ class Solution:
             curr_container = (j-i)*min(height[i], height[j])
             if curr_container > container: 
                 container = curr_container
-            if height[i] > height[j]:
-                j -= 1
-            else:
+            if height[i] < height[j]:
                 i += 1
+            else:
+                j -= 1
 
         return container
