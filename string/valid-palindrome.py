@@ -7,7 +7,7 @@ class Solution:
         if clean_s == []:
             return True
 
-        while i != j:
+        while i <= j:
             if clean_s[i] != clean_s[j]:
                 return False
             i += 1
