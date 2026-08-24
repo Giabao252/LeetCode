@@ -1,5 +1,6 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
+        #two pointer
         clean_s = [c.lower() for c in s if c.isalnum()]
         i = 0
         j = len(clean_s) - 1
