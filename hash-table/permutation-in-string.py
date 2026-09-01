@@ -1,5 +1,8 @@
 from collections import Counter
-
+"""
+sliding window approach - window of same size as s1 -> slides through s2. 
+s1, s2 char frequencies are counted in hashmaps -> O(26n)
+"""
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         k = len(s1)
