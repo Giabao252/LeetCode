@@ -4,7 +4,7 @@ class Solution:
         permutation.sort()
         k = len(s1)
 
-        for i in range(len(s2) - k):
+        for i in range(len(s2) - k+1):
             temp = []
             count = 0
             while count != k:
