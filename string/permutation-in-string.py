@@ -5,8 +5,12 @@ class Solution:
         k = len(s1)
 
         for i in range(len(s2) - k):
-            temp = [s2[i], s2[i+1]]
-            temp.sort()
+            temp = []
+            count = 0
+            while count != k:
+                temp.append(s2[i + count])
+                temp.sort()
+                count += 1
             if temp == permutation:
                 return True
             
